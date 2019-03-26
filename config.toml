@@ -1,0 +1,30 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Polymath Academy"
+theme = "hugo-classic"
+publishDir = "docs"
+googleAnalytics = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+enableEmoji = false 
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+[[menu.feed]]
+    name = "Subscribe"
+    url = "/index.xml"
+
+[params]
+    description = "A blog dedicated to learning and mastering skills across the intellectual and physical spectrum."
+    footer = "Thank you for reading, and your thoughtful discussion"
+    custom_css = ["css/theme-override.css"]
