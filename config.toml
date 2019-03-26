@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://johnabs.github.io/PA_blog"
 languageCode = "en-us"
 title = "Polymath Academy"
 theme = "hugo-classic"

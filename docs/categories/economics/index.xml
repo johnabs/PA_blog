@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Economics on Polymath Academy</title>
-    <link>/categories/economics/</link>
+    <link>https://johnabs.github.io/PA_blog/categories/economics/</link>
     <description>Recent content in Economics on Polymath Academy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/economics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://johnabs.github.io/PA_blog/categories/economics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>On Intellectual Property</title>
-      <link>/post/2018/12/10/on-intellectual-property/</link>
+      <link>https://johnabs.github.io/PA_blog/post/2018/12/10/on-intellectual-property/</link>
       <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018/12/10/on-intellectual-property/</guid>
+      <guid>https://johnabs.github.io/PA_blog/post/2018/12/10/on-intellectual-property/</guid>
       <description>Intellectual Property: Government Backed Monopolies For All To those of you uninitiated into the world of intellectual property (IP), a quick explanation is in order. In essence, there are three types of IP: trademarks, copywritten works, and patents. Although there is technically a $4^\mathrm{th}$ classification, known as trade secrets, I am not particularly interested in them, as they are simply not revealed to the public. A primary example would be the Coca-Cola formula: it was refined over a long period of time, and it is kept closely guarded as to prevent anyone else from reproducing their product and selling it, thus depriving the creators of profit.</description>
     </item>
     

@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Polymath Academy</title>
-    <link>/tags/</link>
+    <link>https://johnabs.github.io/PA_blog/tags/</link>
     <description>Recent content in Tags on Polymath Academy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://johnabs.github.io/PA_blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/tags/</link>
+      <link>https://johnabs.github.io/PA_blog/tags/</link>
       <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/</guid>
+      <guid>https://johnabs.github.io/PA_blog/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTML</title>
-      <link>/tags/html/</link>
+      <link>https://johnabs.github.io/PA_blog/tags/html/</link>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/html/</guid>
+      <guid>https://johnabs.github.io/PA_blog/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Juicy</title>
-      <link>/tags/juicy/</link>
+      <link>https://johnabs.github.io/PA_blog/tags/juicy/</link>
       <pubDate>Mon, 23 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>/tags/juicy/</guid>
+      <guid>https://johnabs.github.io/PA_blog/tags/juicy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>/tags/markdown/</link>
+      <link>https://johnabs.github.io/PA_blog/tags/markdown/</link>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/markdown/</guid>
+      <guid>https://johnabs.github.io/PA_blog/tags/markdown/</guid>
       <description></description>
     </item>
     
