@@ -6,6 +6,7 @@ categories:
   - Economics
 tags:
   -  
+draft: true
 ---
 
 ## Intellectual Property: Government Backed Monopolies For All

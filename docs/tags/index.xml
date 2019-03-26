@@ -6,46 +6,9 @@
     <description>Recent content in Tags on Polymath Academy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://johnabs.github.io/PA_blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://johnabs.github.io/PA_blog/tags/</link>
-      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnabs.github.io/PA_blog/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HTML</title>
-      <link>https://johnabs.github.io/PA_blog/tags/html/</link>
-      <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnabs.github.io/PA_blog/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Juicy</title>
-      <link>https://johnabs.github.io/PA_blog/tags/juicy/</link>
-      <pubDate>Mon, 23 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnabs.github.io/PA_blog/tags/juicy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://johnabs.github.io/PA_blog/tags/markdown/</link>
-      <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnabs.github.io/PA_blog/tags/markdown/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
