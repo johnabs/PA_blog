@@ -1,5 +1,5 @@
 ---
-title: "The Open Source CS Degree: An Introduction"
+title: The Open Source CS Degree
 date: '2019-04-03'
 categories:
   - Technology
