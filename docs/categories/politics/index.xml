@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Politics on Polymath Academy</title>
+    <title>Politics on Polymath Playground</title>
     <link>https://johnabs.github.io/PA_blog/categories/politics/</link>
-    <description>Recent content in Politics on Polymath Academy</description>
+    <description>Recent content in Politics on Polymath Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://johnabs.github.io/PA_blog/categories/politics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>On Intellectual Property</title>
-      <link>https://johnabs.github.io/PA_blog/post/2018/12/10/on-intellectual-property/</link>
-      <pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Property Tax and Gentrification</title>
+      <link>https://johnabs.github.io/PA_blog/post/2019/12/12/property-tax-and-gentrification/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johnabs.github.io/PA_blog/post/2018/12/10/on-intellectual-property/</guid>
-      <description>Intellectual Property: Government Backed Monopolies For All To those of you uninitiated into the world of intellectual property (IP), a quick explanation is in order. In essence, there are three types of IP: trademarks, copywritten works, and patents. Although there is technically a $4^\mathrm{th}$ classification, known as trade secrets, I am not particularly interested in them, as they are simply not revealed to the public. A primary example would be the Coca-Cola formula: it was refined over a long period of time, and it is kept closely guarded as to prevent anyone else from reproducing their product and selling it, thus depriving the creators of profit.</description>
+      <guid>https://johnabs.github.io/PA_blog/post/2019/12/12/property-tax-and-gentrification/</guid>
+      <description>Throughout the world, there are many injustices perpetrated by governments on a daily basis, and unfortunately the United States is no exception. While these injustices are prevalent, and essentially a part of the human condition, it is arguably worse when these injustices are in direct contrast to the word of law and the Constitution. Now, it may certainly be my rather naive understanding of our founding principles; however, I do understand that our right to property has come under fire in recent years, especially with civil asset forfeiture, aggressive policing for profit, and the most insidious (at least in my view) property tax and city limitations on property use.</description>
     </item>
     
   </channel>
