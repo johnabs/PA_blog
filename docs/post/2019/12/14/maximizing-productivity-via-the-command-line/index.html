@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A blog dedicated to learning and mastering skills across the intellectual and physical spectrum.">
+    <title>Maximizing Productivity Via The Command Line | Polymath Playground</title>
+    <link rel="stylesheet" href="/PA_blog/css/style.css" />
+    <link rel="stylesheet" href="/PA_blog/css/fonts.css" />
+    <link rel="stylesheet" href="https://johnabs.github.io/PA_blog/css/theme-override.css">
+    <header>
+
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://johnabs.github.io/PA_blog">~/polymath playground</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/PA_blog/">~/home</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/PA_blog/categories/">~/categories</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/PA_blog/index.xml">~/subscribe</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+  </head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h2><span class="title">Maximizing Productivity Via The Command Line</span></h2>
+
+<h2 class="date">2019-12-14</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="/PA_blog/categories/philosophy">Philosophy</a> <a href="/PA_blog/categories/software">Software</a> <a href="/PA_blog/categories/efficiency">Efficiency</a> 
+  
+  
+  
+  
+</p>
+</div>
+
+
+<div class="content-wrapper">
+  <main>
+    <p>Those who know me know I am a huge fan of GNU/Linux (for you Stallman), and I originally got into it to help me with a few chemistry simulations in my quantum mechanics and statistical dynamics course in undergrad. Specifically, my professor made a huge deal about turning in lab reports that were formatted ever-so precisely, and to kill two birds with one stone, I installed Linux on my computer to help me learn and interface with the supercomputer, and installed LaTeX to help with the lab report issue. I started out with Ubuntu and TeXMaker, learned the basics of ssh and simple shell commands, and for a while that was it. Then, I started learning more about Vim, the command line, and  &ldquo;free as in freedom&rdquo; software, but still stuck with the incredibly ugly, rather bloated utilities such as QtiPlot (an Origin Pro replacement), TeXMaker, Unity DE, etc. To keep things brief, eventually I moved to Linux Mint to free myself from Unity, Amazon, Canonical and some of the bloat, but keeping my le comfy package manager that I was used to. Then, I went to grad school, read some blogs by a cool guy named <a href="http://matt.might.net/articles/">Matt Might</a>, and he suggested using a laptop and doing the heavy lifting on a server. I initially brushed it off, until the O.G. Chad Linux-Tuber, <a href="https://lukesmith.xyz/">Luke Smith</a>, revealed himself to the internet. Then I installed arch, bought into the Thinkpad meme, and tried using CLI apps for real, and I haven't looked back. I heavily suggest checking out both sources, as they share similar philosophies, and much of the information I initially used to form my opinion was pulled from them, as well as a few tutorials and suggested projects. But today, I'm here to propose a few ideas that aren't particularly new, but have served me beautifully over the last few years:</p>
+<ul>
+<li>Command line utilities are not only faster, but typically more intuitive than their graphical counterparts.</li>
+<li>When used <strong>appropriately</strong>, there is rarely a better alternative.</li>
+<li>Their ability to be daisy chained together in scripts makes their use-case nearly all encompassing.</li>
+<li>They are easy to locate, install, and are free as in beer (and often as in &lsquo;MURICA too).</li>
+<li>Finally, using them not only reduces run-time of certain tasks, but implementation time too.</li>
+</ul>
+<p>So, these are some pretty strong claims, and there are also some considerable downsides to CLI tools, such as configuring them for your ideal workflow, rather than just leaving them to their default settings. However, I think the best illustrations of how CLI tools have saved me minutes, if not hours, are in 4 domains: installing packages, email, text editing/typesetting, and automation of boring or time-consuming stuff.</p>
+<h2 id="installing-packages">Installing Packages</h2>
+<p>The most beautiful thing about Linux (and specifically Arch-based distributions) is the wealth of tools and the ease of installing them directly. On Windows or Mac, you have to go either online or on the App-Store and download your apps directly, then install them. On Arch, for example, you can type &ldquo;sudo pacman -S <em>package name</em>&quot;. Now, this seems meaningless, so I just remapped the command to &ldquo;install <em>package name</em>&quot;. install is an alias that replaces all the stuff before package name, and does the same job. Another advantage is that you can be almost certain these packages are safe to use, as the people who maintain the arch repository verify their integrity. This is one of the reasons that Linux tends to have lower rates of malware infection as well. You can also install from other sources such as Github with much more ease than on alternative systems or using a gui as well.</p>
+<h2 id="email">Email</h2>
+<p>The CLI app I use for email is similar to many others, but it's called (neo)mutt. You can use either mutt or neomutt, I currently use the latter, but the primary difference is that neomutt has extra features that are quite handy, though the downside is that the documentation is a bit lacking in my opinion. However, it makes up for it with the raw speed and extensibility you have to screw around with email. For example, you can navigate using only the keyboard, delete all emails matching a specific pattern (amazing for deleting old mailing lists or services that won't let you unsubscribe), open and download attachments super quickly, encrypt and decrypt emails automatically with gpg, and if you interface it with a tool like ranger (a file browser) you can add attachments seamlessly and blazing fast. Here's a link(coming soon) on how to get all this set up the easiest way I know how, that also includes a handy wizard written by Luke Smith to make things even easier.</p>
+<h2 id="text-editingtypesetting">Text Editing/Typesetting</h2>
+<p>The bread and butter of this whole post is Vim. Truly, Vim-like keybindings currently inhabit nearly every CLI app, and many of the GUI apps that I use as well (my web browser primarily). Vim, once adapted to, truly saves so much time, energy and just effort when it comes to writing, coding, typesetting in LaTeX, and more. It has a host of built-in tools, as well as community made plugins, that allow for matching and replacing text using regular expressions, navigation with the keyboard alone, and a key feature called &ldquo;modal editing&rdquo;. It also has syntax highlighting, typing with multiple cursors at once, and auto indenting, spell checking and more. While Vim certainly has a learning curve, just like typing does, learning to do so will drastically improve your productivity in the long term (in fact, I'm writing this blog post in Vim right now).</p>
+<h2 id="automation">Automation</h2>
+<p>Finally, and most importantly, is the mindset shift that comes about when using these utilities. At first, you'll begin to only use the defaults, probably won't read the <em>man</em> pages, and will think this isn't worth the effort. However, as you learn more, you will start realizing not only how your system works, but how you can leverage things you know to make things that you don't like way better. The worst part of most GUI apps is that you get what you get, and that's it. With CLI apps, most of them will allow you to redirect their output to the input of other tools via a pipe, to daisy chain multiple commands together to achieve a desired result. And the best part is, this is very simple, and highly intuitive to accomplish. A good example is the following &ldquo;program&rdquo; that will auto-generate a password for you on most unix/linux machines.</p>
+<pre><code>head -c $1 /dev/urandom | tr -dc 'a-zA-Z0-9~!@#$%^&amp;*_-' | sed 1q | xclip
+</code></pre><p>This one-liner, as they're called, takes the head (top few lines or bytes) of something called /dev/urandom, a random byte generator. This normally produces a garbled mess, so what we do is pipe it into the tr command, with the option to only hold onto the characters from a-z, A-Z, 0-9, and the special characters that can be used in most passwords. Finally, we pipe it to sed, which in this case is only being used to print a single line, and finally we pipe it to xclip, so we can paste it from our clipboard. The beauty of command line tools, is that with a single line of &ldquo;code&rdquo;, you can make a full featured password generator from tools that are already on your system, without needing to write a, by comparison, large and slow python program from scratch.</p>
+<h2 id="summary-and-links">Summary and Links</h2>
+<p>I fully understand that many of you won't be convinced by the ramblings of a convert who is blogging into the void, hoping someone will actually listen. So, I would suggest you give it a shot, and see if in a month (or even a few weeks if you really dive in) command line tools and shell scripting can seriously save you time and maximize your efficiency on the various tasks you complete daily. The faster and more efficiently you get your work done, the more time you have to do things you enjoy. I am of the mind that we should work to live, not live to work, and I hope that these apps help you, as they have me, get a little bit closer to that ideal.</p>
+<ul>
+<li><a href="https://github.com/LukeSmithxyz/mutt-wizard">mutt wizard</a> for configuring neomutt.</li>
+<li><a href="https://www.vim.org/">vim</a> run vimtutor in a shell for a tutorial</li>
+<li><a href="https://www.latex-project.org/">LaTeX</a> just search &ldquo;how to do X in LaTeX&rdquo; and you'll find it</li>
+<li><a href="https://rmarkdown.rstudio.com/">RMarkdown</a> a LaTeX &ldquo;alternative&rdquo; which is easier to use starting out than LaTeX, but can also use it.</li>
+<li><a href="https://www.compuphase.com/software_termite.htm">termite</a> a good starter terminal to play around with these things</li>
+<li><a href="https://st.suckless.org/">st</a> a super minimal terminal that I wouldn't suggest if you're new. Luke has a fork that's pre-configured.</li>
+<li><a href="https://gohugo.io/getting-started/quick-start/">hugo</a> a great system for starting a static website blog (I'm using it for this blog).</li>
+<li><a href="https://github.com/agarrharr/awesome-cli-apps#other-awesome-lists">awesome-cli-list</a> a huge curated list of cli apps to get a feel for them, and such.</li>
+<li><a href="https://linuxmint.com/">starter linux distro</a> linux mint, fairly newbie friendly</li>
+<li><a href="https://www.archlinux.org/">advanced linux distro</a> do it you wimp.</li>
+</ul>
+<p>&ndash;</p>
+<p>John</p>
+
+    <a href="/PA_blog"> >> Home</a>
+  </main>
+</div>
+    <footer>
+      
+<script>
+(function() {
+  function center_el(tagName) {
+    var tags = document.getElementsByTagName(tagName), i, tag;
+    for (i = 0; i < tags.length; i++) {
+      tag = tags[i];
+      var parent = tag.parentElement;
+      
+      if (parent.childNodes.length === 1) {
+        
+        if (parent.nodeName === 'A') {
+          parent = parent.parentElement;
+          if (parent.childNodes.length != 1) continue;
+        }
+        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+      }
+    }
+  }
+  var tagNames = ['img', 'embed', 'object'];
+  for (var i = 0; i < tagNames.length; i++) {
+    center_el(tagNames[i]);
+  }
+})();
+</script>
+
+      
+      <hr/>
+      Thank you for reading. | <a href="https://github.com/johnabs">https://github.com/johnabs</a> | <a href="mailto:johnbs1234@gmail.com">johnbs1234@gmail.com</a>
+      
+    </footer>
+  </body>
+</html>
+
