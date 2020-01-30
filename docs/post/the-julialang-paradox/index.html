@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>The JuliaLang Paradox &middot; johnabs</title>
+  <meta name="description" content="" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  
+  <link href="https://johnabs.github.io/PA_blog/css/concated.min.css" rel="stylesheet">
+  
+  
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://johnabs.github.io/PA_blog" class="nav-text">johnabs</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://johnabs.github.io/PA_blog" class="hamburger-menu-overlay-link">Home</a></li>
+      
+      <li><a href="https://johnabs.github.io/index.xml" class="hamburger-menu-overlay-link">rss</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">The JuliaLang Paradox</h1>
+          <p class="post-date">Posted <time datetime="2020-01-29">Jan 29, 2020</time></p>
+        </header>
+        
+        <p>The beginning of this post is going to sound ridiculous, but I promise it is 100% true. One night went to bed trying to remember the name of an interesting programming language that I heard about a while back. It supposedly had a lot of super nifty features, and was some strange hybrid of multiple languages that still somehow worked. I was intrigued, but couldn't remember, so I decided to just go to sleep and figure it out in the morning. Well I had a strange fever dream, woke up at 5 A.M remembering the name of the language, Julia, and then I immediately went to my desk, downloaded the packages, and was testing it out. Let me tell you that was the best possible thing that could have happened to me that day in terms of my programming career and love of data science.</p>
+<p>Julia is a scrappy new language that made its debut from the folks over at MIT, and it does almost everything right. It's differentiable, it does pretty printing of data frames, it has multiple subsetting methods, it's got amazing syntax, it has Hadamard operations FOR ANY FUNCTION YOU WRITE, and people are writing new packages for it by the day. There's a research group dedicated towards using it for differentiable machine learning, which really speeds up the training process, there's a professor who wrote a book in it, and despite the simple syntax, and ease of integration with other languages, it's blazing fast. I would love to keep hyping it up, but I think that would be a bit much. Just kidding, it deserves it! It integrates beautifully with Jupyter notebooks for a more in-between editing mode for testing individual chunks at a time without needing to use the REPL or a script, it has a paper/book writing environment similar to RMarkdown (which is also a weak-point I'll discuss later), can run C and Fortran code natively, and can call Python, R, and all sorts of other languages with some wrappers, then read those outputs into Julia native types and benefit from the speed of Julia and the flexibility of the near-infinite python and R libraries out there. Finally, you can develop GPU code entirely in Julia, which drastically improves its use for machine learning as well.</p>
+<p>I CANNOT get enough of this amazing language which is this weird, beautiful hybrid of Python, Matlab, R, C and more. And the reason I named this article &ldquo;The JuliaLang Paradox&rdquo;, is because it almost seems to fly in the face of the idea that &ldquo;too many chefs spoil the broth&rdquo;. It flawlessly strips the grain from the chaff of other languages, and integrates the grains together beautifully into this sort of programming seed/nut loaf that just happens to go great with some metaphorical butter (or maybe some syntactic sugar&hellip;I'll see myself out). However, despite it's beauty, ease of use, and flexibility, it does have some downsides, at least for my applications.</p>
+<p>Primarily the issue I was referring to above is known as the &ldquo;time to first plot&rdquo; issue. The way Julia is compiled, it only pre-compiles packages when you're going to use them, which, in theory, should save on time in the long term. However, this increases run-time of scripts that only do a small thing like generate a single plot from data. I collected a bit of data here and found that to make an identical document in RMarkdown vs Weave from the same CSV file, using the same plotting package. R took 1.53 seconds, whereas weave took 67.59 seconds. That difference on a small project like this is HUGE, and I clearly wouldn't recommend using it for single dummy documents like this. However, this time difference improves as the documents eventually get longer, as the real kicker for Julia is the time to the <em>first</em> plot, whereas the rest of the plots move much quicker in comparison. So eventually, especially for thesis documents or long research papers, Weave should hypothetically come out on top. (I may test this in the future, but I really don't want to migrate my whole thesis into Weave at the moment).Additionally, in Julia 1.4, when it gets released, this issue should be addressed and allow for much faster compile times! So not much longer until we get some comparable performance on the short side of things too!</p>
+<p>Finally, I'll let you know that I've been really flexing my Julia muscles trying to write some interesting software. On my Github, I have a wrapper for the Ally-Invest API that you can use to try your hand at algorithmic trading on Ally if you're interested. No, I'm not even remotely sponsored by them, in-fact they decided to ignore my emails about some API issues they have, but I definitely found their API easier to use than Robinhood's which had 0 official documentation. I'll leave links below for Julia, it's IDE (or vim plugins if you took my article on CLI-apps to heart), as well as a link to that API wrapper for those of you who may be able to use it. It's still in progress, but if you like it and want to donate or something, I'll add my ETH Wallet there, and I have a brave certified creator's account if you want to do so that way (seamless shilling, I know).</p>
+<ul>
+<li><a href="https://julialang.org/downloads/">Julia</a></li>
+<li><a href="https://junolab.org/">IDE</a></li>
+<li><a href="https://github.com/JuliaEditorSupport/julia-vim">Vim-Plugin</a></li>
+<li><a href="">Ally-Wrapper</a></li>
+</ul>
+<p>&ndash;</p>
+<p>John</p>
+
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://johnabs.github.io/PA_blog/post/maximizing-productivity-via-the-command-line/" class="card blog-card" rel="bookmark" >
+  
+  <article class="card-body">
+    <h2 class="card-title">Maximizing Productivity Via The Command Line</h2>
+    <p class="card-text">Those who know me know I am a huge fan of GNU/Linux (for you Stallman), and I originally got into it to help me with a few chemistry simulations in my quantum mechanics and statistical dynamics course in undergrad. Specifically, my professor made a huge deal about turning in lab reports that were formatted ever-so precisely, and to kill two birds with one stone, I installed Linux on my computer to help me learn and interface with the supercomputer, and installed LaTeX to help with the lab report issue.</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-12-14 1214:00">Dec 14, 2019</time></p>
+      
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://johnabs.github.io/PA_blog" class="card home-card" style="background-image: url( https://johnabs.github.io/PA_blog/logo.png )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://johnabs.github.io/PA_blog/js/core.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+  </body>
+</html>

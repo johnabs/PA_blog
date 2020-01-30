@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software - johnabs</title>
+    <link>https://johnabs.github.io/PA_blog/tags/software/</link>
+    <description>Recent content in Software on johnabs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://johnabs.github.io/PA_blog/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The JuliaLang Paradox</title>
+      <link>https://johnabs.github.io/PA_blog/post/the-julialang-paradox/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/post/the-julialang-paradox/</guid>
+      <description>The beginning of this post is going to sound ridiculous, but I promise it is 100% true. One night went to bed trying to remember the name of an interesting programming language that I heard about a while back. It supposedly had a lot of super nifty features, and was some strange hybrid of multiple languages that still somehow worked. I was intrigued, but couldn&#39;t remember, so I decided to just go to sleep and figure it out in the morning.</description>
+    </item><item>
+      <title>Maximizing Productivity Via The Command Line</title>
+      <link>https://johnabs.github.io/PA_blog/post/maximizing-productivity-via-the-command-line/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/post/maximizing-productivity-via-the-command-line/</guid>
+      <description>Those who know me know I am a huge fan of GNU/Linux (for you Stallman), and I originally got into it to help me with a few chemistry simulations in my quantum mechanics and statistical dynamics course in undergrad. Specifically, my professor made a huge deal about turning in lab reports that were formatted ever-so precisely, and to kill two birds with one stone, I installed Linux on my computer to help me learn and interface with the supercomputer, and installed LaTeX to help with the lab report issue.</description>
+    </item>
+  </channel>
+</rss>

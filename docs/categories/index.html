@@ -1,118 +1,67 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" dir="ltr">
   <head>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Categories &middot; johnabs</title>
+  <meta name="description" content="" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  
+  <link href="https://johnabs.github.io/PA_blog/css/concated.min.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="https://johnabs.github.io/PA_blog/categories/index.xml" title="johnabs" />
+  
+  
+</head>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/site.webmanifest">
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A blog dedicated to learning and mastering skills across the intellectual and physical spectrum.">
-    <title>Categories | Polymath Playground</title>
-    <link rel="stylesheet" href="/PA_blog/css/style.css" />
-    <link rel="stylesheet" href="/PA_blog/css/fonts.css" />
-    <link rel="stylesheet" href="https://johnabs.github.io/PA_blog/css/theme-override.css">
-    <header>
-
-  <nav>
-    <ul>
+  <body class="list-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://johnabs.github.io/PA_blog" class="nav-text">johnabs</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://johnabs.github.io/PA_blog" class="hamburger-menu-overlay-link">Home</a></li>
       
-      
-      <li class="pull-left ">
-        <a href="https://johnabs.github.io/PA_blog">~/polymath playground</a>
-      </li>
-      
-      
-      <li class="pull-left ">
-        <a href="/PA_blog/">~/home</a>
-      </li>
-      
-      
-      <li class="pull-left current">
-        <a href="/PA_blog/categories/">~/categories</a>
-      </li>
-      
-
-      
-      
-      <li class="pull-right">
-        <a href="/PA_blog/index.xml">~/subscribe</a>
-      </li>
-      
-
+      <li><a href="https://johnabs.github.io/index.xml" class="hamburger-menu-overlay-link">rss</a></li>
     </ul>
-  </nav>
-</header>
+  </div>
+</nav>
 
-  </head>
-
-  <body>
-    <br/>
-
-
-<h1>Categories</h1>
-
-<ul class="terms">
-  
-  <li>
-    <a href="https://johnabs.github.io/PA_blog/categories/efficiency/">Efficiency</a> (1)
-  </li>
-  
-  <li>
-    <a href="https://johnabs.github.io/PA_blog/categories/essay/">Essay</a> (1)
-  </li>
-  
-  <li>
-    <a href="https://johnabs.github.io/PA_blog/categories/philosophy/">Philosophy</a> (2)
-  </li>
-  
-  <li>
-    <a href="https://johnabs.github.io/PA_blog/categories/politics/">Politics</a> (1)
-  </li>
-  
-  <li>
-    <a href="https://johnabs.github.io/PA_blog/categories/software/">Software</a> (1)
-  </li>
-  
-</ul>
-
-    <footer>
-      
-<script>
-(function() {
-  function center_el(tagName) {
-    var tags = document.getElementsByTagName(tagName), i, tag;
-    for (i = 0; i < tags.length; i++) {
-      tag = tags[i];
-      var parent = tag.parentElement;
-      
-      if (parent.childNodes.length === 1) {
+    <main class="card-container side-gutter">
+      <header class="list-header">
+        <h1 class="list-header-title">Categories</h1>
         
-        if (parent.nodeName === 'A') {
-          parent = parent.parentElement;
-          if (parent.childNodes.length != 1) continue;
-        }
-        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
-      }
-    }
-  }
-  var tagNames = ['img', 'embed', 'object'];
-  for (var i = 0; i < tagNames.length; i++) {
-    center_el(tagNames[i]);
-  }
-})();
+      </header>
+      
+      
+      
+      
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://johnabs.github.io/PA_blog/js/core.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
 </script>
 
-      
-      <hr/>
-      Thank you for reading. | <a href="https://github.com/johnabs">https://github.com/johnabs</a> | <a href="mailto:johnbs1234@gmail.com">johnbs1234@gmail.com</a>
-      
-    </footer>
   </body>
 </html>
-

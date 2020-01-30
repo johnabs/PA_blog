@@ -1,14 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Polymath Playground</title>
+    <title>Tags - johnabs</title>
     <link>https://johnabs.github.io/PA_blog/tags/</link>
-    <description>Recent content in Tags on Polymath Playground</description>
+    <description>Recent content in Tags on johnabs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://johnabs.github.io/PA_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://johnabs.github.io/PA_blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
+    <item>
+      <title>Code Attached</title>
+      <link>https://johnabs.github.io/PA_blog/tags/code-attached/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/code-attached/</guid>
+      <description></description>
+    </item><item>
+      <title>Software</title>
+      <link>https://johnabs.github.io/PA_blog/tags/software/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/software/</guid>
+      <description></description>
+    </item><item>
+      <title>STEM</title>
+      <link>https://johnabs.github.io/PA_blog/tags/stem/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/stem/</guid>
+      <description></description>
+    </item><item>
+      <title>Efficiency</title>
+      <link>https://johnabs.github.io/PA_blog/tags/efficiency/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/efficiency/</guid>
+      <description></description>
+    </item><item>
+      <title>Philosophy</title>
+      <link>https://johnabs.github.io/PA_blog/tags/philosophy/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/philosophy/</guid>
+      <description></description>
+    </item><item>
+      <title>Essay</title>
+      <link>https://johnabs.github.io/PA_blog/tags/essay/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/essay/</guid>
+      <description></description>
+    </item><item>
+      <title>Politics</title>
+      <link>https://johnabs.github.io/PA_blog/tags/politics/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/politics/</guid>
+      <description></description>
+    </item><item>
+      <title>Introduction</title>
+      <link>https://johnabs.github.io/PA_blog/tags/introduction/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/introduction/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

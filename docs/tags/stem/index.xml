@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>STEM - johnabs</title>
+    <link>https://johnabs.github.io/PA_blog/tags/stem/</link>
+    <description>Recent content in STEM on johnabs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://johnabs.github.io/PA_blog/tags/stem/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The JuliaLang Paradox</title>
+      <link>https://johnabs.github.io/PA_blog/post/the-julialang-paradox/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/post/the-julialang-paradox/</guid>
+      <description>The beginning of this post is going to sound ridiculous, but I promise it is 100% true. One night went to bed trying to remember the name of an interesting programming language that I heard about a while back. It supposedly had a lot of super nifty features, and was some strange hybrid of multiple languages that still somehow worked. I was intrigued, but couldn&#39;t remember, so I decided to just go to sleep and figure it out in the morning.</description>
+    </item>
+  </channel>
+</rss>
