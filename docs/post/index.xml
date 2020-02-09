@@ -5,31 +5,24 @@
     <description>Recent content in Posts on johnabs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://johnabs.github.io/PA_blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>The JuliaLang Paradox</title>
+      <link>https://johnabs.github.io/PA_blog/post/jlp/the-julialang-paradox/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/post/jlp/the-julialang-paradox/</guid>
+      <description>The beginning of this post is going to sound ridiculous, but I promise it is 100% true. One night went to bed trying to remember the name of an interesting programming language that I heard about a while back. It supposedly had a lot of super nifty features, and was some strange hybrid of multiple languages that still somehow worked. I was intrigued, but couldn&amp;rsquo;t remember, so I decided to just go to sleep and figure it out in the morning.</description>
+    </item><item>
       <title>Maximizing Productivity Via The Command Line</title>
       <link>https://johnabs.github.io/PA_blog/post/cli/maximizing-productivity-via-the-command-line/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://johnabs.github.io/PA_blog/post/cli/maximizing-productivity-via-the-command-line/</guid>
       <description>Those who know me know I am a huge fan of GNU/Linux (for you Stallman), and I originally got into it to help me with a few chemistry simulations in my quantum mechanics and statistical dynamics course in undergrad. Specifically, my professor made a huge deal about turning in lab reports that were formatted ever-so precisely, and to kill two birds with one stone, I installed Linux on my computer to help me learn and interface with the supercomputer, and installed LaTeX to help with the lab report issue.</description>
-    </item><item>
-      <title></title>
-      <link>https://johnabs.github.io/PA_blog/post/property-tax-and-gentrification/</link>
-      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnabs.github.io/PA_blog/post/property-tax-and-gentrification/</guid>
-      <description>Throughout the world, there are many injustices perpetrated by governments on a daily basis, and unfortunately the United States is no exception. While these injustices are prevalent, and essentially a part of the human condition, it is arguably worse when these injustices are in direct contrast to the word of law and the Constitution. Now, it may certainly be my rather naive understanding of our founding principles; however, I do understand that our right to property has come under fire in recent years, especially with civil asset forfeiture, aggressive policing for profit, and the most insidious (at least in my view) property tax and city limitations on property use.</description>
-    </item><item>
-      <title>Who I Am and Why I&#39;m Here</title>
-      <link>https://johnabs.github.io/PA_blog/post/who-i-am-and-why-im-here/</link>
-      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnabs.github.io/PA_blog/post/who-i-am-and-why-im-here/</guid>
-      <description>Collegiate education has become a controversial topic in US politics, and as one who attended higher education for 8 years, attempted a PhD in STEM, and has taught many students with varying levels of enthusiasm, I can certainly understand why. At its best, a college education should hypothetically produce well-rounded, capable individuals with a specialization in a particular (or many) fields. This should ideally increase the student&amp;rsquo;s ability to find employment, as they should be distinguished from their peers, and allows employers to quickly discriminate amongst potential candidates by using the degree they&amp;rsquo;ve achieved as a useful heuristic.</description>
     </item>
   </channel>
 </rss>
