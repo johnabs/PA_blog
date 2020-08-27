@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+:root {
+    --base04: #000000; 
+    --base03:  #002b37;
+    --base02:  #073642;
+    --base01:  #586e75;
+    --base00:  #657b83;
+    --base0:  #839496;
+    --base1:  #93a1a1;
+    --base2:  #eee8d5;
+    --base3: #fdf6e3;
+    --yellow:  #b58900;
+    --orange:  #cb4b16;
+    --red:     #dc322f;
+    --magenta: #d33682;
+    --violet:  #6c71c4;
+    --blue:    #268bd2;
+    --cyan:    #2aa198;
+    --green:   #859900;
+}
+
+
+@media (max-width: 500px) {
+    .links-container {
+        flex-direction: column !important;
+        order: 2 !important;        
+        /* width: 100vw !important;  */
+    }
+    .terminal-screen{
+        border: none !important;
+    }
+    #search {
+        order: 1 !important;
+    }
+
+    #middle {
+        vertical-align: none !important;
+    }
+
+    #inner {
+        margin-left: 0  !important;
+        margin-right: 0  !important;
+    }
+
+    .user {
+        order: 0 !important;
+    }
+
+
+}
+
+/* elements */
+body {
+    background-color: var(--base03);
+    font-family: "Lucidia Console", monospace;
+    color: var(--base0);
+    font-size: 16px;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: "";
+}
+
+input {
+    background-color: var(--base03);
+    caret-color: var(--base0);
+    outline: none;
+    border: none;
+    color: var(--base0);
+    font-family: "Lucidia Console", monospace;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.terminal-screen {
+    overflow: hidden;
+    border: 5px solid var(--base00);
+    padding: 5px;
+    
+}
+
+#outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+
+#search {
+    display: flex;
+    width: 100%;
+    order: 2;
+}
+
+#search-bar {
+    order: 4;
+    overflow: hidden;
+    background: var(--base03);
+    font-family: "Lucidia Console", monospace;
+    display: flex;
+}
+
+.music-embed{
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto; /* centering */
+}
+
+.links-container {
+    order: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.main,
+.tech,
+.social,
+.varsity,
+.media,
+.programming,
+.gaming {
+    width: auto;
+    position: relative;
+    padding: 10px;
+    transition: background-color 0.3s;
+    color: var(--cyan);
+}
+
+.main:hover,
+.tech:hover,
+.social:hover,
+.varsity:hover,
+.media:hover,
+.programming:hover,
+.gaming:hover {
+    background-color: var(--base03);
+}
+
+.main {
+    order: 0;
+}
+
+.social {
+    order: 1;
+}
+
+.varsity {
+    order: 2;
+}
+
+.tech {
+    order: 3;
+}
+
+.programming {
+    order: 4;
+}
+
+.media {
+    order: 5;
+}
+
+.gaming {
+    order: 6;
+}
+
+/* hyperlinks */
+
+a:link,
+a:visited {
+    color: var(--base0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/* "syntax highlighting" */
+
+.user {
+    display: flex;
+    order: 0;
+}
+
+.unix-user {
+    color: var(--orange);
+    order: 0;
+}
+
+.unix-syntax1 {
+    color: var(--base0);
+    order: 1;
+}
+
+.PC-name {
+    color: var(--blue);
+    order: 2;
+}
+
+.unix-syntax2 {
+    color: var(--base0);
+    order: 3;
+}
+
+/* blinking cursor */
+
+.cursor {
+    animation: blinker 1s step-start infinite;
+    color: var(--base0);
+    order: 4;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* section headings */
+
+#main-h, #varsity-h, #social-h, #tech-h, #programming-h, #media-h, #gaming-h{
+    font-weight: bold;
+
+}
+#main-h {
+    color: var(--magenta);
+}
+
+#varsity-h {
+    color: var(--green);
+}
+
+#social-h {
+    color: var(--orange);
+}
+
+#tech-h {
+    color: var(--cyan);
+}
+
+#programming-h {
+    color: var(--red);
+}
+
+#media-h {
+    color: var(--yellow);
+}
+
+#gaming-h {
+    color: var(--blue);
+}
+
+#themes {
+    background-color: var(--base03);
+    border: none;
+}
+
+.separators {
+    color: var(--base01);
+}
+
+.button{
+    background-color: transparent;
+    border: 0;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 4px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+  
+.button:hover {
+    background-color: var(--base00);
+    color: var(--base03);
+}
+
+
+</style>
+
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <title>~ sweet ~</title>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="middle">
+
+            <div class="terminal-screen" id="inner">
+                <!-- username with cursor -->
+                <div class="user">
+                    <a class="unix-user">[johnbs</a>
+                    <a class="unix-syntax1">@</a>
+                    <a class="PC-name">web</a>
+                    <a class="unix-syntax2">&#126;]$ ls -al</a>
+                    <!--  <a class="cursor">|</a> -->
+                </div>
+
+                <!-- links with sections -->
+                <div class="links-container">
+                    <div class="main">
+                        <ul class="hyperlinks">
+                            <li id="main-h">main</li>
+                            <li><a href="https://johnabs.github.io/PA_blog">my_blog</a></li>
+                            <li><a href="https://github.com/johnabs">my_github</a></li>
+                            <li><a href="https://mail.protonmail.com/inbox">protonmail</a></li>
+                            <li><a href="http://192.168.0.101/login">nextcloud</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="social">
+                        <ul class="hyperlinks">
+                            <li id="social-h">science</li>
+                            <li><a href="https://www.orcid.org/signin/">orcid</a></li>
+                            <li><a href="https://www.osf.io/">osf</a></li>
+                            <li><a href="https://www.bibbase.org/">bibbase</a></li>
+                            <li><a href="https://www.zotero.org/">zotero</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tech">
+                        <ul class="hyperlinks">
+                            <li id="tech-h">tech</li>
+                            <li><a href="https://news.ycombinator.com/">hacker_news</a></li>
+                            <li><a href="https://wiki.archlinux.org/">arch_wiki</a></li>
+                            <li><a href="https://www.reddit.com/r/unixporn/">r/unixporn</a></li>
+                            <li><a href="eff.org">eff</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="varsity">
+                        <ul class="hyperlinks">
+                            <li id="varsity-h">university</li>
+                            <li><a href="mypurdue.purdue.edu">mypurdue</a></li>
+                            <li><a href="mycourses.purdue.edu">blackboard</a></li>
+                            <li><a href="brain.fm">brain.fm</a></li>
+                            <li><a href="https://www.invidio.us/results?search_query=lofi+hip+hop">lofi_hip-hop</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="programming">
+                        <ul class="hyperlinks">
+                            <li id="programming-h">programming</li>
+                            <li><a href="https://www.learn-c.org/">c</a></li>
+                            <li><a href="https://www.haskell.org/">haskell</a></li>
+                            <li><a href="https://www.julialang.org/">julia</a></li>
+                            <li><a href="http://www.vimgolf.com/">vimgolf</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="music"> 
+                            <ul class="hyperlinks">
+                                <li id="music-h">music</li>
+                                <li><a href="">empty_link</a></li>
+                                <li><a href="">empty_link</a></li>
+                                <li><a href="">empty_link</a></li>
+                        </ul>
+                    </div>
+                    -->
+
+                    <!--                    
+                    <div class="media">
+                        <ul class="hyperlinks">
+                            <li id="media-h">media</li>
+                            <li><a href="https://unsplash.com/">unsplash</a></li>
+                            <li><a href="https://videos.pexels.com/">pexels_video</a></li>
+                        </ul>
+                    </div>
+                    -->
+
+                    <div class="gaming">
+                        <ul class="hyperlinks">
+                            <li id="gaming-h">shopping</li>
+                            <li><a href="https://www.amazon.com/">amazon</a></li>
+                            <li><a href="https://www.ebay.com/">ebay</a></li>
+                            <li><a href="https://www.humblebundle.com/">humble_bundle</a></li>
+                            <li><a href="https://store.steampowered.com//">steam</a></li>
+                        </ul>
+                    </div>
+
+                </div><!-- inner -->
+
+                <!-- search with duckduckgo-->
+                <div id="search">
+                    <a class="unix-user">Search</a>
+                    <a class="unix-syntax1">@</a>
+                    <a class="PC-name">Searx</a>
+                    <a class="unix-syntax2">&#126;</a>
+                    <form id="search-bar" method="post" action="https://search.snopyta.org/?preferences=eJx9VMGO00AM_RpyiYpY9sApBwRCrIS0K9rlOnInTmoyMw6eSbvh63GapJ2yiEOjju1n-z3P2ELCloUwVi0GFHCFg9AO0GKFYfO8LRxbcNOhgCGxZd87TFj9OkFIBXkNNL3wy1jtZMDCYzpwXT09bndFhAYjgthD9a5IB_RYcbQghWAcXIqGgwl4Mgn21RdwEYuayaiT3RGlYtDjW5a2OKM2MY3ah-OWLNd4LGqKsHdYGwwtBSXQCHhwtBc0htKb95_CCGDMkWrkqMc9pf1gO0yru_fLv5a5dVj2DsbS81HVyGBzFj9EsnoSrGvSDItaaokJJPWTDpkxcTdy4njgDsIVjWn0HJy2mwfPFc5aTgVbapUYxNsq-DuA_0-JhtyMPnPJA6HvSk8iLAtdCrksDQhzHu_5J2KXW270mahcGXVkO4jxagDbRh4yOn706FnGMgmE6PTC1XnuS4K_G9KrEV_TvETd3d9_eMnOLSUH-4VhI4hl5CadQLCsSdAmbWHxrjNcKszyr_rdvWS9c49BsOd49Te1MNXZWSh0BDZD1XrLpl_L5WzLfKs8l3Gp1In8OSZl_lVOa-0mHXOe2Syg77PO5rc2PY5y-iwJUfhEN4qv9CNbAld6rAky86XVEUKNLznyyPAaN7040PFOYZHiP2e7triyu7CZOqYjlre4A2jK6bNwGEJUvvFwo3GN4YIpMNzugut26N2gplg96ijNvHmMPsDusn72KlBEmdbQlPgc99Fa1L4_Pz4o5CSUUD0_yG8cdWgOnDocp-CH0FBQr4lW2F3bWIvuBHThiHn-_k0T6WpBUdQWXWMUyuIhEYcp09fd7mmbFduehzn1aOcVPZqITq9xoQ8CNfUfQ4on9w==&q=">
+                        <input type="text" name="q" placeholder="" autofocus />
+                    </form>
+                </div>
+
+            </div><!-- middle -->
+           
+           <!-- music stuff to add
+            <div class="music-embed">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/327432184&color=%23c75457&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </div>
+            -->
+        </div>
+    </div><!-- outer -->
+</body>
+
+</html>
