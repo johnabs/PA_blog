@@ -5,23 +5,37 @@
     <description>Recent content in Tags on No-BS.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://johnabs.github.io/PA_blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Philosophy</title>
+      <link>https://johnabs.github.io/PA_blog/tags/philosophy/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/philosophy/</guid>
+      <description></description>
+    </item><item>
+      <title>Politics</title>
+      <link>https://johnabs.github.io/PA_blog/tags/politics/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/politics/</guid>
+      <description></description>
+    </item><item>
+      <title>Software</title>
+      <link>https://johnabs.github.io/PA_blog/tags/software/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnabs.github.io/PA_blog/tags/software/</guid>
+      <description></description>
+    </item><item>
       <title>Code Attached</title>
       <link>https://johnabs.github.io/PA_blog/tags/code-attached/</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://johnabs.github.io/PA_blog/tags/code-attached/</guid>
-      <description></description>
-    </item><item>
-      <title>Software</title>
-      <link>https://johnabs.github.io/PA_blog/tags/software/</link>
-      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnabs.github.io/PA_blog/tags/software/</guid>
       <description></description>
     </item><item>
       <title>STEM</title>
@@ -36,13 +50,6 @@
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://johnabs.github.io/PA_blog/tags/efficiency/</guid>
-      <description></description>
-    </item><item>
-      <title>Philosophy</title>
-      <link>https://johnabs.github.io/PA_blog/tags/philosophy/</link>
-      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnabs.github.io/PA_blog/tags/philosophy/</guid>
       <description></description>
     </item>
   </channel>
